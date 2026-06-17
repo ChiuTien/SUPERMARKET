@@ -818,3 +818,1528 @@ in SYSTEMPATH/Database/BaseConnection.php on line 606.
 11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
 12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
 13 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/arendre12hehh/SUPERMARKET/public/index.php')
+ERROR - 2026-06-17 08:21:20 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 08:21:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: caisse/numero]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/ITU/L2/S4/Systeme d\'information/Exo/SUPERMARKET/public/index.php')
+ERROR - 2026-06-17 08:22:17 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 08:22:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: caisse/numero]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/ITU/L2/S4/Systeme d\'information/Exo/SUPERMARKET/public/index.php')
+ERROR - 2026-06-17 08:23:48 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 08:23:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: caisse/numero]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/ITU/L2/S4/Systeme d\'information/Exo/SUPERMARKET/public/index.php')
+ERROR - 2026-06-17 08:24:00 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 08:24:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: caisse/numero]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/ITU/L2/S4/Systeme d\'information/Exo/SUPERMARKET/public/index.php')
+ERROR - 2026-06-17 08:24:36 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 08:24:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: caisse/numero]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/ITU/L2/S4/Systeme d\'information/Exo/SUPERMARKET/public/index.php')
+ERROR - 2026-06-17 08:24:37 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 08:24:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: caisse/numero]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/ITU/L2/S4/Systeme d\'information/Exo/SUPERMARKET/public/index.php')
+ERROR - 2026-06-17 08:24:37 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 08:24:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: caisse/numero]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/ITU/L2/S4/Systeme d\'information/Exo/SUPERMARKET/public/index.php')
+ERROR - 2026-06-17 08:24:38 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 08:24:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: caisse/numero]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/ITU/L2/S4/Systeme d\'information/Exo/SUPERMARKET/public/index.php')
+ERROR - 2026-06-17 08:24:38 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 08:24:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: caisse/numero]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/ITU/L2/S4/Systeme d\'information/Exo/SUPERMARKET/public/index.php')
+ERROR - 2026-06-17 08:24:41 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 08:24:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: caisse/numero]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/ITU/L2/S4/Systeme d\'information/Exo/SUPERMARKET/public/index.php')
+ERROR - 2026-06-17 08:24:42 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 08:24:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: caisse/numero]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/ITU/L2/S4/Systeme d\'information/Exo/SUPERMARKET/public/index.php')
+ERROR - 2026-06-17 08:24:42 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 08:24:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: caisse/numero]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/ITU/L2/S4/Systeme d\'information/Exo/SUPERMARKET/public/index.php')
+ERROR - 2026-06-17 08:24:42 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 08:24:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: caisse/numero]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/ITU/L2/S4/Systeme d\'information/Exo/SUPERMARKET/public/index.php')
+ERROR - 2026-06-17 08:24:42 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 08:24:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: caisse/numero]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/ITU/L2/S4/Systeme d\'information/Exo/SUPERMARKET/public/index.php')
+ERROR - 2026-06-17 08:24:43 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 08:24:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: caisse/numero]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/ITU/L2/S4/Systeme d\'information/Exo/SUPERMARKET/public/index.php')
+ERROR - 2026-06-17 08:24:43 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 08:24:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: caisse/numero]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/ITU/L2/S4/Systeme d\'information/Exo/SUPERMARKET/public/index.php')
+ERROR - 2026-06-17 08:24:43 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 08:24:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: caisse/numero]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/ITU/L2/S4/Systeme d\'information/Exo/SUPERMARKET/public/index.php')
+ERROR - 2026-06-17 08:24:43 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 08:24:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: caisse/numero]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/ITU/L2/S4/Systeme d\'information/Exo/SUPERMARKET/public/index.php')
+ERROR - 2026-06-17 08:24:43 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 08:24:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: caisse/numero]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/ITU/L2/S4/Systeme d\'information/Exo/SUPERMARKET/public/index.php')
+ERROR - 2026-06-17 08:24:43 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 08:24:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: caisse/numero]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/ITU/L2/S4/Systeme d\'information/Exo/SUPERMARKET/public/index.php')
+ERROR - 2026-06-17 08:24:43 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 08:24:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: caisse/numero]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/ITU/L2/S4/Systeme d\'information/Exo/SUPERMARKET/public/index.php')
+ERROR - 2026-06-17 08:24:44 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 08:24:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: caisse/numero]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/ITU/L2/S4/Systeme d\'information/Exo/SUPERMARKET/public/index.php')
+ERROR - 2026-06-17 08:24:44 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 08:24:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: caisse/numero]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/ITU/L2/S4/Systeme d\'information/Exo/SUPERMARKET/public/index.php')
+ERROR - 2026-06-17 08:24:44 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 08:24:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: caisse/numero]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/ITU/L2/S4/Systeme d\'information/Exo/SUPERMARKET/public/index.php')
+ERROR - 2026-06-17 08:24:44 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 08:24:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: caisse/numero]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/ITU/L2/S4/Systeme d\'information/Exo/SUPERMARKET/public/index.php')
+ERROR - 2026-06-17 08:24:44 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 08:24:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: caisse/numero]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/ITU/L2/S4/Systeme d\'information/Exo/SUPERMARKET/public/index.php')
+ERROR - 2026-06-17 08:24:59 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/spark(87): CodeIgniter\Boot::bootSpark()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/spark(87): CodeIgniter\Boot::bootSpark()
+#10 {main}
+CRITICAL - 2026-06-17 08:24:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: CLI, Route: db:table]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Commands/Database/ShowTableInfo.php(121): CodeIgniter\Database\BaseConnection->listTables()
+ 5 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+ 6 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+ 7 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+ 9 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
+ERROR - 2026-06-17 08:27:04 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 08:27:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: caisse/numero]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/ITU/L2/S4/Systeme d\'information/Exo/SUPERMARKET/public/index.php')
+ERROR - 2026-06-17 08:27:06 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/app/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+#7 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+#8 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/chiu/Documents/ITU/L2/S4/Systeme d'information/Exo/SUPERMARKET/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 08:27:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: caisse/numero]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(18): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->getPage()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/ITU/L2/S4/Systeme d\'information/Exo/SUPERMARKET/public/index.php')
