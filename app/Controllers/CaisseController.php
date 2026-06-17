@@ -15,7 +15,8 @@ class CaisseController extends BaseController {
     }
 
     public function getPage() {
-        return view("caisse/numCaisse");
+        $data['caisses'] = $this->caisse->findAll();    
+        return view("caisse/numCaisse", $data);
     }
 
     public function traitAchat() {
