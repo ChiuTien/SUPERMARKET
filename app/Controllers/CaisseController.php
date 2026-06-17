@@ -1,8 +1,8 @@
 <?php 
 namespace App\Controllers;
 
-class Caisse extends BaseController {
-    private function getPage() {
+class CaisseController extends BaseController {
+    public function getPage() {
         return view("caisse/numCaisse");
     }
 }

@@ -8,4 +8,4 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 
 //Caisse 
-$routes->get('/caisse/numero', 'Caisse::getPage');
+$routes->get('/caisse/numero', 'CaisseController::getPage');
