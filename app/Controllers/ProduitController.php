@@ -12,7 +12,4 @@ class ProduitController extends BaseController {
     public function __construct() {
         $this->produit = new Produit();
     }
-    public function index() {
-        return view('caisse/numCaisse');
-    }
 }
