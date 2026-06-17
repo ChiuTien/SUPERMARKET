@@ -15,4 +15,7 @@ class ProduitController extends BaseController {
     public function index() {
         return view('caisse/numCaisse');
     }
+    public function achatProduit() {
+
+    }
 }
