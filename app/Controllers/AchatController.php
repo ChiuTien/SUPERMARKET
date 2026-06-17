@@ -20,8 +20,7 @@ class AchatController extends BaseController {
         $this->achat = new Achat();
         $this->achatProduit = new AchatProduit();
     }
-
-    public function index() {
-        
+    public function achat() {
+        $data = $this->request->getPost("data");
     }
 }
