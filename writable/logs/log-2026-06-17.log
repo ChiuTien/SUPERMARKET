@@ -46,3 +46,14 @@ in SYSTEMPATH/Database/Database.php on line 147.
  6 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
  7 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
  8 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
+CRITICAL - 2026-06-17 06:02:40 --> Error: Class "CodeIgniter\Database\SQLite\Connection" not found
+[Method: CLI, Route: db:table]
+in SYSTEMPATH/Database/Database.php on line 147.
+ 1 SYSTEMPATH/Database/Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Commands/Database/ShowTableInfo.php(110): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\ShowTableInfo->run()
+ 5 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+ 6 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+ 7 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+ 8 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
