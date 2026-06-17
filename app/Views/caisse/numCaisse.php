@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +8,12 @@
 </head>
 <body>
     <h2>Choisir caisse</h2>
-    <form action="" method="post">
-    <input type="number" name="numeroCaisse" id="numeroCaisse"><br>
+    <form action="/caisse/add" method="post">
+        <select name="idCaisse">
+            <?php foreach ($caisses as $c) { ?>
+                <option value="<?= $c['id'] ?>"><?= $c['nom'] ?></option>
+            <?php } ?>
+        </select>
     <button type="submit"> Valider </button>
     </form>
 </body>

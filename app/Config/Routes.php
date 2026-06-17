@@ -10,3 +10,4 @@ $routes->get('/', 'Home::index');
 
 //Caisse 
 $routes->get('/caisse/numero', 'CaisseController::getPage');
+$routes->post('/caisse/add', 'CaisseController::traitAchat');
