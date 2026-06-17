@@ -15,7 +15,8 @@ class AchatProduit extends Model
     protected $allowedFields    = [
         "produit_id",
         "achat_id",
-        "observation"
+        "observation",
+        "quantite"
     ];
 
     protected bool $allowEmptyInserts = false;
